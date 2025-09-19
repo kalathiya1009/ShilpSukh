@@ -1,0 +1,281 @@
+/*
+========================================
+GLOBAL STYLES & FONT DEFINITIONS
+========================================
+*/
+:root {
+    --primary-color: #B85C38;   /* Terracotta Rust */
+    --secondary-color: #5E8C88; /* Teal from logo */
+    --background-color: #FDF8F2; /* Creamy Beige */
+    --text-color: #3E3B39;       /* Charcoal Grey */
+    --heading-font: 'Lora', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/*
+========================================
+BOOTSTRAP NAVBAR CUSTOMIZATION
+========================================
+*/
+
+/* General Navbar Styling */
+.navbar {
+    background-color: #ffffff !important; /* A clean white for the navbar background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Adds a subtle shadow for a lifting effect */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Logo Sizing */
+.navbar-brand img {
+    height: 150px; /* Control the height of your logo */
+    width: auto;  /* Let the width adjust automatically to maintain aspect ratio */
+}
+
+/* Navigation Links Styling */
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Style for link hover and active page */
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important; /* Highlight links with the main terracotta color */
+}
+
+/* "Shop on Amazon" Button Styling */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    border-radius: 50px; /* Pill-shaped button */
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #934a2d !important; /* Darker terracotta on hover */
+    border-color: #934a2d !important;
+}
+/*
+========================================
+HERO SECTION STYLING
+========================================
+*/
+.hero-section {
+    /* This creates a dark overlay for text readability, on top of your background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    
+    /* Set the height and use flexbox to vertically center the content */
+    min-height: 85vh; /* Takes up 85% of the screen's height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a subtle shadow behind text */
+}
+
+.hero-section .lead {
+    font-weight: 400;
+    max-width: 600px; /* Prevents the text from becoming too wide on large screens */
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/*
+========================================
+INTRO & FEATURES SECTION STYLING
+========================================
+*/
+.intro-section h2 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.intro-section h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/*
+========================================
+FEATURED COLLECTIONS SECTION
+========================================
+*/
+.section-title {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.category-card {
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    overflow: hidden; /* Ensures the image corners are rounded with the card */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.category-card .card-body {
+    padding: 1.5rem;
+}
+
+.category-card h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Customizing Bootstrap's outline button for this section */
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 50px; /* Pill shape */
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+/*
+========================================
+CALL TO ACTION (CTA) SECTION
+========================================
+*/
+.cta-section {
+    background-color: var(--primary-color); /* Uses the main terracotta color */
+}
+
+.cta-section h2 {
+    font-family: var(--heading-font);
+}
+
+/* Style for the light button on the dark background */
+.cta-section .btn-light {
+    font-weight: 700;
+    color: var(--primary-color);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    border: none;
+}
+
+/*
+========================================
+FOOTER
+========================================
+*/
+.footer-section {
+    background-color: var(--text-color); /* Using our dark charcoal color */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section .social-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-link:hover {
+    color: #ffffff;
+}
+/*
+========================================
+STORY PAGE STYLING
+========================================
+*/
+.page-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.page-header h1 {
+    font-family: var(--heading-font);
+}
+
+.story-content h2 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+/*
+========================================
+TESTIMONIALS PAGE
+========================================
+*/
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-left: 5px solid var(--primary-color); /* A nice accent border */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Allows text to take up available space */
+}
+
+.customer-name {
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: right;
+    margin-bottom: 0; /* Remove default paragraph margin */
+}
+/*
+========================================
+CONTACT PAGE
+========================================
+*/
+.contact-heading {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-info-item h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Adds the brand color to the form fields when they are active/focused */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(184, 92, 56, 0.25);
+}
