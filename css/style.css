@@ -279,34 +279,3 @@ CONTACT PAGE
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(184, 92, 56, 0.25);
 }
-/*
-========================================
-MOBILE NAVBAR STYLING
-========================================
-*/
-
-/* This applies only on screens smaller than 992px (the point where the menu collapses) */
-@media (max-width: 991.98px) {
-    
-    /* Style for the dropdown container */
-    .navbar-collapse {
-        margin-top: 15px; /* Add some space below the logo/hamburger */
-        padding: 15px;
-        background-color: #f8f9fa; /* A light grey background */
-        border: 1px solid #dee2e6;
-        border-radius: 5px;
-    }
-
-    /* Style for the menu links inside the dropdown */
-    .navbar-nav .nav-link {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    /* Style for the "Shop on Amazon" button inside the dropdown */
-    .navbar-collapse .btn-primary {
-        width: 100%; /* Make the button full-width */
-        margin-top: 15px; /* Add space above the button */
-        margin-left: 0 !important; /* Reset the left margin */
-    }
-}
