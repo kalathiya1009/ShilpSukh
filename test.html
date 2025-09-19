@@ -1,40 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShilpSukh | The Art of Kitchen Craft</title>
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">Brand</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="ShilpSukh Logo" style="height: 50px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- Correct toggler -->
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Another Link</a></li>
-      </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="story.html">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collections.html">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary ms-lg-3">Shop on Amazon</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container text-white text-center">
+                <h1 class="display-4">The Art of Kitchen Craft</h1>
+                <p class="lead my-4">Discover beautifully crafted kitchenware that brings joy to your home.</p>
+                <a href="collections.html" class="btn btn-lg btn-primary">Explore Our Collections</a>
+            </div>
+        </section>
+        <section class="intro-section py-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2>The Heart of Your Home</h2>
+                <p class="lead text-muted">At ShilpSukh, we believe happiness begins in the kitchen. We bring you thoughtfully designed, high-quality kitchenware that combines modern elegance with timeless craftsmanship.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h3>Artisan Quality</h3>
+                <p class="text-muted">Every piece is crafted with meticulous attention to detail, ensuring it's not just beautiful but also built to last.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Elegant Designs</h3>
+                <p class="text-muted">Our products feature clean lines and a minimalist aesthetic to complement any modern kitchen.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Premium Materials</h3>
+                <p class="text-muted">We source only the finest, food-safe materials that you can trust for your family's daily use.</p>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+</section>
+<section class="featured-collections py-5" style="background-color: #F8F4ED;">
+    <div class="container text-center">
+        <h2 class="section-title">Our Collections</h2>
+        <p class="lead text-muted mb-5">From everyday essentials to special occasion showstoppers.</p>
 
-<!-- Bootstrap JS (must be inside body before closing tag) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <img src="images/collection-tableware.jpg" alt="Tableware Collection" class="img-fluid">
+                    <div class="card-body">
+                        <h3>Tableware</h3>
+                        <a href="collections.html#tableware" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <img src="images/collection-jars.jpg" alt="Jars and Containers Collection" class="img-fluid">
+                    <div class="card-body">
+                        <h3>Jars & Containers</h3>
+                        <a href="collections.html#jars" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="category-card">
+                    <img src="images/collection-flatware.jpg" alt="Flatware Collection" class="img-fluid">
+                    <div class="card-body">
+                        <h3>Flatware</h3>
+                        <a href="collections.html#flatware" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+<section class="cta-section text-white text-center py-5">
+    <div class="container">
+        <h2 class="display-5">Ready to Elevate Your Kitchen?</h2>
+        <p class="lead my-4">Find our complete collection of products exclusively on Amazon.</p>
+        <a href="https://www.amazon.in/s?i=merchant-items&me=A2MXWYQ1X5D1SJ&s=relevanceblender&marketplaceID=A21TJRUUN4KGV&qid=1758255569&ref=sr_st_relevanceblender&ds=v1%3AeXqeKVMuR%2BT9BeylIQ%2FW00KBpKRQp97WCFvhNv%2FLEqc" class="btn btn-lg btn-light">Shop on Amazon Now</a>
+    </div>
+</section>
+
+<footer class="footer-section py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2025 Varni Enterprise. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.instagram.com/shilpsukh_kitchenware" class="social-link">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
